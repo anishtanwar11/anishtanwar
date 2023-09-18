@@ -3,12 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/faveicon-anish.png" type="image/x-icon">
     <title>Anish Tanwar - Web App Developer</title>
-    <!-- CSS FILE -->
+    <!-- ================= CSS FILE =============== -->
     <link rel="stylesheet" href="style/style.css">
+    <!-- ================= REMIX ICON =============== -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
 </head>
 <body>
-    
+     <!--================= HEADER =================-->
+     <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo mobile_size-logo">
+                <img src="images/faveicon-anish.png" alt="">
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link active-link">
+                            <i class="ri-home-4-line"></i> Home
+                        </a>
+                        
+                    </li>
+                    
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="ri-user-line"></i> About
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="ri-trophy-line"></i> Skills
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">
+                            <i class="ri-gallery-line"></i> Projects
+                        </a>
+                    </li>
+
+                    <a href="#" class="nav__logo window_size-logo">
+                        <img src="images/faveicon-anish.png" alt="">
+                    </a>
+
+                    <li class="nav__item">
+                        <a href="#qualification" class="nav__link">
+                            <i class="ri-book-open-line"></i> Qualification
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">
+                            <i class="ri-briefcase-line"></i> Services
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="ri-chat-3-line"></i> Contact
+                        </a>
+                    </li>
+                </ul>
+
+                <!--===== CLOSEBUTTON =====-->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__button">
+                <!-- Theme Change Button -->
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-4-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--================== MAIN ==================-->
+    <main class="main">
+        <div class="home___container container grid">
+            <div class="home__left-box">
+                <div class="home__line"></div>
+                <h2 class="founder_name">
+                    Anish Tanwar
+                </h2>
+                <h1 class="home__title">
+                    Turning Idea's into Pixels <br>
+                </h1>
+                <h3 class="home__info-title">
+                    I have a strong interest in creating web applications, websites, and implementing responsive web design.
+                </h3>
+                <div class="home__buttons">
+                    <button>Get a Proposal</button>
+                    <button>Portfolio</button>
+                </div>
+            </div>
+
+            <div class="home__right-box">
+                <img src="images/home-photo.png" alt="">
+            </div>
+        </div>
+    </main>
 </body>
 <!-- SCRIPT FILE -->
 <script src="script/script.js"></script>

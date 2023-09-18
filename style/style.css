@@ -1,5 +1,551 @@
+/* ================= GOOGLE-FONT ==============*/
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Poppins:ital,wght@0,100;0,300;0,400;1,100;1,400;1,800&family=Roboto:wght@400;500&display=swap');
+
+/*================= VARIABLES CSS =============*/
+:root {
+    --header-height: 3.5rem;
+
+    /*============== colors ===================*/
+    /*= Color mode HSL(hue, saturation, lightness */
+    --first-color: hsl(207, 65%, 65%);
+    --title-color: hsl(207, 4%, 16%);
+    --text-color: hsl(207, 4%, 28%);
+    --text-color-light: hsl(207, 4%, 56%);
+    --body-color: hsl(207, 4%, 99%);
+    --container-color: hsl(207, 4%, 95%);
+    --active-color: #FF3131;
+
+    /* === Change the first number ====*/
+    /* Blue 207 - Purple: 250 - Pink:356 - Teal: 174 */
+
+    --gradient-color: linear-gradient(180deg, hsla(207, 48%, 72%, 0), hsla(207, 65%, 65%, 1));
+
+    /* ============== Font and typography ============*/
+    /* .5rem = 8px | 1rem = 16px .....*/
+    --body-font: 'Roboto', sans-serif;
+    --title-font: 'Lora', serif;
+    --biggest-font-size: 1.5rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+    --tiny-font-size: .625rem;
+
+    /* =========== Font-weight ============*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /* ============= z-index =============*/
+    --z-normal: 1;
+    --z-tooltip: 10;
+    --z-fixed: 100;
+
+
+    /*================== RESUME-COLOR-&-FONT-STYLES ====================*/
+    --font-header-height: 3rem;
+
+    /*============== colors ===================*/
+    /*= Color mode # */
+    --resume-title-color: #0B0A0A;
+    --resume-text-color: #403A3A;
+    --resume-text-color-light: #707070;
+    --resume-body-color: #FCFCFC;
+    --resume-container-color: #FAFAFA;
+    --resume-container-color-alt: #F0EFEF;
+
+     /* ============== Font and typography ============*/
+    /* .5rem = 8px | 1rem = 16px .....*/
+    --resume-body-font: 'Roboto', sans-serif;
+    --resume-biggest-font-size: ;
+    --resume-h1-font-size: 1.5rem;
+    --resume-h2-font-size: 1.25rem;
+    --resume-h3-font-size: 1rem;
+    --resume-normal-font-size: .938rem;
+    --resume-small-font-size: .875rem;
+    --resume-smaller-font-size: .813rem;
+
+    /*=============== MARGENES ============*/
+    --mb-1: .5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+
+    /*=============== z-index ============*/
+    --resume-z-tooltip: 10;
+    --resume-z-fixed: 100;
+}
+
+/* Responsive typography */
+@media screen and (min-width: 1024px) {
+    :root {
+        --biggest-font-size: 3rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+        --tiny-font-size: .688rem;
+    }
+}
+
+/* ============== BASE ============= */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+    transition: background .4s ; /* For dark mode animation */
+}
+
+h1,h2,h3{
+    color: var(--title-color);
+    font-family: var(--title-font);
+    font-weight: var(--font-medium);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+/* ============== REUSABLE CSS CLASSES ======================== */
+
+.container{
+    max-width: 1350px;
+    margin-inline: 1.5rem;
+}
+
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
+
+.section{
+    padding-block: 2.5rem;
+}
+
+.section__border{
+    border-bottom: 1px solid var(--title-color);
+    padding-bottom: 3.5rem;
+}
+
+.section__title,
+.section__subtitle{
+    text-align: center;
+}
+
+.section__title{
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-semi-bold);
+    margin: .25rem;
+}
+
+.section__subtitle{
+    display: block;
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+    margin-bottom: 3rem;
+}
+
+.main{
+    overflow: hidden; /* For animation */
+    padding-bottom: 4rem;
+    background: linear-gradient(to bottom, #fff , rgb(243, 240, 240));
+}
+
+
+/* ============== THEME ============ */
+
+.change-theme{
+    font-size: 1.25rem;
+    color: var(--title-color);
+    cursor: pointer;
+    transition: color .3s;
+}
+
+/* ============ HEADER & NAV ==============*/
+
+.header{
+    width: 100%;
+    position: fixed;
+    bottom: 2rem;
+    left: 0;
+    z-index: var(--z-fixed);
+    padding: 0 15px;
+}
+
+.nav{
+    height: calc(var(--header-height) + .5rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--body-color);
+    box-shadow: 0 4px 20px hsla(207, 24%, 35%, .1);
+    padding-inline: 1.5rem;
+    border-radius: 3rem;
+    transition: background .4s ; /* For dark mode animation */
+}
+
+.nav__logo,
+.nav__toggle,
+.nav__close{
+    color: var(--title-color);
+}
+
+.window_size-logo{
+    display: none;
+}
+
+.nav__logo{
+    font-family: var(--title-font);
+    font-weight: var(--font-medium);
+}
+.nav__logo img{
+    width: 40px;
+    height: 40px;
+}
+
+.nav__toggle{
+    display: flex;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1023px) {
+    .nav__menu{
+        max-width: 500px;
+        position: fixed;
+        width: 88%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        background-color: var(--body-color);
+        box-shadow: 0 4px 20px hsla(207, 24%, 35%, .1);
+        padding: 2rem 1.5rem 5rem;
+        border-radius: 2rem;
+        transition: bottom .3s;
+        bottom: -60%;
+    }
+   
+   
+}
+
+.nav__list{
+    grid-template-columns: repeat(3, max-content);
+    justify-content: center;
+    gap: 2rem 3rem;
+}
+
+.nav__link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: .25rem;
+    font-size: var(--smaller-font-size);
+    color: var(--text-color-light);
+    transition: color .3s;
+}
+
+.nav__link:hover{
+    color: var(--active-color);
+}
+
+.nav__link i{
+    font-size: 1.25rem;
+}
+
+.nav__close{
+    position: absolute;
+    right: 1.5rem;
+    bottom: .7rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Show menu */
+.show-menu{
+    bottom: 2rem;
+}
+.nav__button{
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+
+
+/* Active link */
+.active-link{
+    color: var(--active-color);
+}
+
+
+/* ============ HOME ==============*/
+
+.home___container{
+    padding: 5rem 2rem 0 2rem;
+    display: flex;
+}
+.home__left-box,
+.home__right-box{
+    width: 50%;
+}
+.home__left-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+.home__right-box{
+    display: grid;
+    place-items: center;
+}
+.home__right-box img{
+width: 100%;
+max-width: 500px;
+}
+
+.home__line{
+    background: var(--title-color);
+    width: 30px;
+    height: .2rem;
+}
+.founder_name{
+    color: var(--title-color);
+    font-size: var(--h2-font-size);
+    font-family: var(--title-font);
+}
+.home__title{
+    color: var(--active-color);
+    font-family: var(--body-font);
+    font-size: 4rem;
+    font-weight: var(--font-semi-bold);
+    
+}
+.home__info-title{
+    font-family: var(--body-font);
+    color: var(--text-color-light);
+    font-weight: 400;
+    font-size: var(--h2-font-size);
+}
+
+.home__buttons{
+    display: flex;
+    gap: 20px;
+}
+.home__buttons button{
+    border: none;
+    outline: none;
+    padding: 13px 23px;
+    font-size: var(--h3-font-size);
+    font-family: var(--body-font);
+    font-weight: var(--font-semi-bold);
+    letter-spacing: 1px;
+    color: #fff;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+.home__buttons button:nth-child(1){
+    background-color: var(--active-color);
+}
+.home__buttons button:nth-child(2){
+    background-color: var(--title-color); 
+}
+.home__buttons button:active{
+    scale: .9;
+}
+
+/* =========================================== */
+/* ========== RESPONSIVE HOME ============== */
+/* ============================================ */
+@media screen and (max-width: 980px){
+    .home___container{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5rem;
+    }
+    .home__left-box,
+    .home__right-box{
+        width: 100%;
+    }
+    .home__right-box img{
+        max-width: 600px;
+    }
+
+    .founder_name{
+        color: var(--title-color);
+        font-size: var(--h2-font-size);
+        font-family: var(--title-font);
+    }
+    .home__title{
+        color: var(--active-color);
+        font-family: var(--body-font);
+        font-size: 10vw;
+        font-weight: var(--font-semi-bold);
+        
+    }
+    .home__info-title{
+        font-family: var(--body-font);
+        color: var(--text-color-light);
+        font-weight: 400;
+        font-size: vw;
+        margin-bottom: 1rem;
+    }
+    .home__buttons button{
+        font-size: 2vw;
+    }
+}
+@media screen and (max-width: 480px){
+    .home___container{
+        padding: 3rem 0 0 0;
+    }
+    .home__buttons button{
+        font-size: 3vw;
+    }
+}
+/* ==================================================================
+==================================================================
+==================================================================
+==================================================================
+================================================================== */
+
+
+
+/*====================== BREAKPOINTS ======================*/
+/* For small device */
+@media screen and (max-width: 340px) {
+    .container{
+        margin-inline: .5rem;
+    }
+
+    .nav__menu{
+        padding-bottom: 4rem;
+    }
+    .nav__list{
+        gap: 1rem 1.25rem;
+    }
+   
+}
+/* For medium device */
+@media screen and (min-width: 576px) {
+    .nav,
+    .nav__menu{
+        width: 380px;
+    }
+    .nav{
+        margin: 0 auto;
+    }
+}
+
+/* For large device */
+@media screen and (min-width: 1023px){
+    .nav__logo img{
+        width: 60px;
+        height: 60px;
+    }
+    .window_size-logo{
+        display: block;
+    }
+    .mobile_size-logo{
+        display: none;
+    }
+    .header{
+        top: 0;
+        bottom: initial;
+        background-color: var(--body-color);
+        transition: .4s;
+
+    }
+
+    .nav{
+        width: initial;
+        height: calc(var(--header-height) + 2rem);
+        box-shadow: none;
+        border-radius: 0;
+        column-gap: 3rem;
+        margin-inline: 1.5rem;
+        padding: 0;
+    }
+    .nav__link i,
+    .nav__toggle,
+    .nav__close{
+        display: none;
+    }
+
+    .nav__menu{
+        width: 100%;
+        margin-left: auto;
+        background-color: var(--body-color);
+        transition: background .4s;
+    }
+
+    .nav__list{
+        display: flex;
+        column-gap: 3rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav__link{
+        font-size: var(--normal-font-size);
+        font-weight: 500;
+    }
+
+    .dark-theme .nav,
+    .dark-theme .nav__menu{
+        background-color: var(--body-color);
+        box-shadow: none;
+    }
+
+    .change-theme{
+        color: var(--text-color-light);
+    }
+    .change-theme:hover{
+        color: var(--title-color);
+    }
+
+    .scrollup{
+        right: 2rem;
+    }
+    .show-scroll{
+        bottom: 3rem;
+    }
+
+    /* Change background header */
+    .bg-header{
+        box-shadow: 0 4px 20px hsla(207, 24%, 35%, .1);
+    }
+    .dark-theme .bg-header{
+        box-shadow: 0 6px 24px hsl(207, 24%, 8%, .6);
+    }
+
+    
+    /* RESPONSIVE HOME */
+    .home___container{
+        padding-top: 7rem;
+    }
+    .home__right-box img{
+        max-width: 600px;
+    }
+}
+@media screen and (min-width: 1048px){
+    .container{
+        margin-inline: auto;
+    }
+    
 }
