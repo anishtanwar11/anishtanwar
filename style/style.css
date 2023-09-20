@@ -762,7 +762,7 @@ a {
     }
 
     .skills__container {
-        gap: 2rem;
+        gap:8px;
     }
 
     .About__container,
