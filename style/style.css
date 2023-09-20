@@ -317,7 +317,6 @@ a {
 .home___container {
     padding: 2rem 2rem 0 2rem;
     display: flex;
-    border: 1px solid black;
 }
 
 .home__left-box,
@@ -582,12 +581,13 @@ a {
 }
 
 @media screen and (max-width:480px) {
-    .about__container{
+    .about__container {
         display: flex;
         justify-content: center;
         gap: 4rem;
         padding: 0 0;
     }
+
     .skills__container {
         display: flex;
         justify-content: center;
@@ -619,7 +619,7 @@ a {
 
     .skills__container {
         flex-flow: column-reverse;
-        gap: 6rem;
+        gap: 4rem;
     }
 }
 
@@ -762,7 +762,12 @@ a {
     }
 
     .skills__container {
-        gap: 4rem;
+        gap: 2rem;
+    }
+
+    .About__container,
+    .Skills__container {
+        padding-top: 4rem;
     }
 
 }
