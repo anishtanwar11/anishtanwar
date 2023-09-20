@@ -140,14 +140,25 @@ a {
     gap: 1.5rem;
 }
 
-/* .section {
+.section {
     padding-block: 2.5rem;
-} */
+}
 
 .section__border {
     border-bottom: 1px solid var(--title-color);
     padding-bottom: 3.5rem;
 }
+
+/* .about__container,
+.skills__container{
+    border: 1px solid red;
+}
+*/
+
+.About__container,
+.Skills__container{
+    padding-top: 6rem;
+} 
 
 .section__title,
 .section__subtitle {
@@ -170,7 +181,6 @@ a {
 .main {
     overflow: hidden;
     /* For animation */
-    padding-bottom: 2rem;
     background: linear-gradient(to bottom, #fff, rgb(243, 240, 240));
 }
 
@@ -191,7 +201,7 @@ a {
     bottom: 1rem;
     left: 0;
     z-index: var(--z-fixed);
-    padding: 0 0;
+    padding: 0 15px;
 }
 
 .nav {
@@ -453,9 +463,18 @@ a {
 .skills__container {
     display: flex;
     justify-content: center;
-    margin: 4rem 0;
     gap: 4rem;
     padding: 0 2rem;
+}
+
+@media screen and (max-width:480px) {
+    .about__container,
+.skills__container {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    padding: 0 0;
+}
 }
 
 .about__left-box,
@@ -574,7 +593,6 @@ a {
     .skills__container {
         display: flex;
         flex-direction: column;
-        margin: 4rem 0;
         gap: 2rem;
     }
 
@@ -776,11 +794,11 @@ a {
     }
 
     .header {
+        position: absolute;
         top: 0;
         bottom: initial;
         background-color: var(--body-color);
         transition: .4s;
-
     }
 
     .nav {
