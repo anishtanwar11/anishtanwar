@@ -156,9 +156,9 @@ a {
 */
 
 .About__container,
-.Skills__container{
+.Skills__container {
     padding-top: 6rem;
-} 
+}
 
 .section__title,
 .section__subtitle {
@@ -315,8 +315,9 @@ a {
 /* ============ HOME ==============*/
 
 .home___container {
-    padding: 5rem 2rem 0 2rem;
+    padding: 2rem 2rem 0 2rem;
     display: flex;
+    border: 1px solid black;
 }
 
 .home__left-box,
@@ -406,7 +407,7 @@ a {
     .home___container {
         flex-direction: column;
         align-items: center;
-        padding-top: 5rem;
+        padding-top: 3.5rem;
     }
 
     .home__left-box,
@@ -467,15 +468,7 @@ a {
     padding: 0 2rem;
 }
 
-@media screen and (max-width:480px) {
-    .about__container,
-.skills__container {
-    display: flex;
-    justify-content: center;
-    gap: 4rem;
-    padding: 0 0;
-}
-}
+
 
 .about__left-box,
 .about__right-box,
@@ -588,7 +581,23 @@ a {
     transition: .3s ease;
 }
 
+@media screen and (max-width:480px) {
+    .about__container{
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+        padding: 0 0;
+    }
+    .skills__container {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        padding: 0 0;
+    }
+}
+
 @media screen and (max-width: 800px) {
+
     .about__container,
     .skills__container {
         display: flex;
@@ -608,7 +617,7 @@ a {
         padding: 10px 5px;
     }
 
-    .skills__container{
+    .skills__container {
         flex-flow: column-reverse;
         gap: 6rem;
     }
@@ -620,39 +629,45 @@ a {
 ==================================================================*/
 /*====================== SKILLS SECTION ======================*/
 
-.Skills__container{
+.Skills__container {
     border: 1px solid #fff;
 }
-.skill__left-box{
+
+.skill__left-box {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     justify-content: center;
 }
-.skill__left-box h3{
+
+.skill__left-box h3 {
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     color: var(--title-color);
 }
-.skill__left-box h3 span{
+
+.skill__left-box h3 span {
     color: var(--active-color);
 
 }
-.skill__tab ul{
+
+.skill__tab ul {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     margin-top: 1rem;
     gap: 10px;
 }
+
 .skill__tab ul li,
-.skill__tab ul i{
+.skill__tab ul i {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: .4rem;
 }
-.skill__tab ul li{
+
+.skill__tab ul li {
     font-family: var(--body-color);
     font-size: var(--normal-font-size);
     color: var(--text-color);
@@ -660,25 +675,29 @@ a {
     cursor: pointer;
     transition: all .3s ease;
 }
-.skill__tab ul li:hover{
+
+.skill__tab ul li:hover {
     color: var(--active-color);
 }
-.skill__tab ul li.active{
+
+.skill__tab ul li.active {
     color: var(--active-color);
 }
-.skill__tab ul span{
+
+.skill__tab ul span {
     margin-left: 10px;
     color: var(--title-color);
 }
 
-.skill__right-box .skills__name.hide{
+.skill__right-box .skills__name.hide {
     display: none;
 }
-.skill__right-box{
+
+.skill__right-box {
     height: 50vh;
 }
 
-.skill__right-box ul{
+.skill__right-box ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
@@ -687,7 +706,8 @@ a {
     margin: 0 auto;
 
 }
-.skill__right-box li{
+
+.skill__right-box li {
     background: #ffdfdf;
     display: grid;
     place-items: center;
@@ -696,50 +716,57 @@ a {
     border-radius: 40px;
 }
 
-.skill__right-box li img{
+.skill__right-box li img {
     width: 50px;
 }
-.skill__box
-{
+
+.skill__box {
     display: grid;
     place-items: center;
     gap: 10px;
 }
-.skill__name{
+
+.skill__name {
     display: grid;
     place-items: center;
     gap: 5px;
 }
-.title{
+
+.title {
     color: var(--title-color);
     font-family: var(--title-font);
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
 }
-.subTitle{
+
+.subTitle {
     color: var(--text-color-light);
     font-family: var(--body-font);
     font-size: var(--small-font-size);
 
 }
 
-@media screen and (max-width: 386px){
-    .skill__right-box li{
+@media screen and (max-width: 386px) {
+    .skill__right-box li {
         width: 70px;
         height: 100px;
         border-radius: 40px;
     }
-    .skill__right-box li img{
+
+    .skill__right-box li img {
         width: 38px;
     }
-    .skill__right-box ul{
+
+    .skill__right-box ul {
         gap: 25px;
     }
-    .skills__container{
+
+    .skills__container {
         gap: 4rem;
     }
 
 }
+
 /* ==================================================================
 ==================================================================
 ==================================================================
