@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="style/style.css">
     <!-- ================= REMIX ICON =============== -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-
 </head>
 
 <body>
@@ -31,7 +30,7 @@
                     </li>
 
                     <li class="nav__item">
-                        <a href="#skills" class="nav__link">
+                        <a href="#about" class="nav__link">
                             <i class="ri-user-line"></i> About
                         </a>
                     </li>
@@ -90,7 +89,7 @@
     </header>
 
     <!--================== MAIN ==================-->
-    <main class="main">
+    <main class="main" id="#">
         <div class="home___container container grid">
             <div class="home__left-box">
                 <div class="home__line"></div>
@@ -117,7 +116,7 @@
     </main>
 
     <!--================== ABOUT ==================-->
-    <section class="About__container">
+    <section class="About__container" id="about">
         <div class="about__container container grid">
             <div class="about__left-box">
                 <img src="images/about-founder-image.png" alt="">
@@ -126,10 +125,10 @@
             <div class="about__right-box">
                 <h1>About Me.</h1>
                 <h3>
-                    I'm Anish Tanwar, a passionate web developer. I love web development stems from its power to connect
-                    and innovate. As a newcomer, I'm dedicated to crafting user-friendly websites and continually
-                    growing in this dynamic field. Let's connect and explore the endless possibilities of the web
-                    together!
+                    I'm Anish Tanwar, an enthusiastic web developer driven by the incredible potential of web
+                    development to foster connections and drive innovation. As a newcomer in this dynamic field, my
+                    unwavering commitment lies in creating user-friendly websites and continuously evolving my skills.
+                    Let's join forces and embark on a journey to unlock the boundless opportunities of the web together!
                 </h3>
 
                 <ul class="social__icons">
@@ -141,6 +140,209 @@
 
                 <button class="hire__me">Hire me <span><i class="ri-arrow-right-line"></i></span></button>
             </div>
+        </div>
+    </section>
+
+    <!--================== ABOUT ==================-->
+    <section class="Skills__container" id="skills">
+        <div class="skills__container container grid">
+            <div class="skill__left-box">
+                <h3>Favorite <span>Skills</span></h3>
+                <h1>My Skills</h1>
+                <p>See fully what skills I have and perform, to develop the projects for you.</p>
+                <div class="skill__tab">
+                    <ul>
+                        <li class="tab active" data-filter="frontend">
+                            <i class="ri-braces-line"></i>Frontend<span>|</span>
+                        </li>
+                        <li class="tab" data-filter="backend">
+                            <i class="ri-server-line"></i>Backend <span>|</span>
+                        </li>
+                        <li class="tab" data-filter="language">
+                            <i class="ri-code-s-slash-line"></i>Languages<span>|</span>
+                        </li>
+                        <li class="tab" data-filter="tools">
+                            <i class="ri-tools-line"></i>Tools
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="skill__right-box">
+                <!-- FRONTEND SKILL -->
+                <div class="skills__name" data-item="frontend" data-default="true">
+                    <ul>
+                        <div class="skill__box">
+                            <li>
+                                <img src="images/skills/frontend/angular.png" alt="">
+                            </li>
+                            <div class="skill__name">
+                                <p class="title">Angular</p>
+                                <p class="subTitle">Intermediate</p>
+                            </div>
+                        </div>
+
+                        <div class="skill__box">
+                            <li>
+                                <img src="images/skills/frontend/html.svg" alt="">
+                            </li>
+                            <div class="skill__name">
+                                <p class="title">HTML</p>
+                                <p class="subTitle"> Advanced</p>
+                            </div>
+                        </div>
+
+                        <div class="skill__box">
+                            <li>
+                                <img src="images/skills/frontend/css.svg" alt="">
+                            </li>
+                            <div class="skill__name">
+                                <p class="title">CSS</p>
+                                <p class="subTitle"> Advanced</p>
+                            </div>
+                        </div>
+
+                        <div class="skill__box">
+                            <li>
+                                <img src="images/skills/frontend/javascript.svg" alt="">
+                            </li>
+                            <div class="skill__name">
+                                <p class="title">JavaScript
+                                </p>
+                                <p class="subTitle">Intermediate</p>
+                            </div>
+                        </div>
+
+                        <div class="skill__box">
+                            <li>
+                                <img src="images/skills/frontend/typescript.svg" alt="">
+                            </li>
+                            <div class="skill__name">
+                                <p class="title">Typescript
+                                </p>
+                                <p class="subTitle">Intermediate</p>
+                            </div>
+                        </div>
+
+                        <div class="skill__box">
+                            <li>
+                                <img src="images/skills/frontend/bootstrap.svg" alt="">
+                            </li>
+                            <div class="skill__name">
+                                <p class="title">Bootstrap</p>
+                                <p class="subTitle">Advanced</p>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+
+                <!-- BACKEND SKILL -->
+                <div class="skills__name" data-item="backend">
+                    <ul>
+
+                        <div class="skill__box">
+                            <li>
+                                <img src="images/skills/backend/nodejs.svg" alt="">
+                            </li>
+                            <div class="skill__name">
+                                <p class="title">Nodejs
+                                </p>
+                                <p class="subTitle">Beginer</p>
+                            </div>
+                        </div>
+
+                        <div class="skill__box">
+                            <li>
+                                <img src="images/skills/backend/express.svg" alt="">
+                            </li>
+                            <div class="skill__name">
+                                <p class="title">Expressjs</p>
+                                <p class="subTitle">Beginer</p>
+                            </div>
+                        </div>
+
+                        <div class="skill__box">
+                            <li>
+                                <img src="images/skills/backend/mongo.svg" alt="">
+                            </li>
+                            <div class="skill__name">
+                                <p class="title">Mongodb</p>
+                                <p class="subTitle">Beginer</p>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+
+                <!-- LANGUAGES SKILL -->
+                <div class="skills__name" data-item="language">
+                    <ul>
+                        <div class="skill__box">
+                            <li>
+                                <img src="images/skills/languages/c.svg" alt="">
+                            </li>
+                            <div class="skill__name">
+                                <p class="title">C</p>
+                                <p class="subTitle">Advanced</p>
+                            </div>
+                        </div>
+
+                        <div class="skill__box">
+                            <li>
+                                <img src="images/skills/languages/c++.svg" alt="">
+                            </li>
+                            <div class="skill__name">
+                                <p class="title">C++</p>
+                                <p class="subTitle">Advanced</p>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+
+                <!-- TOOL SKILL -->
+                <div class="skills__name" data-item="tools">
+                    <ul>
+
+                        <div class="skill__box">
+                            <li>
+                                <img src="images/skills/tools/github-icon-1.svg" alt="">
+                            </li>
+                            <div class="skill__name">
+                                <p class="title">Github</p>
+                                <p class="subTitle">Advanced</p>
+                            </div>
+                        </div>
+                        <div class="skill__box">
+                            <li>
+                                <img src="images/skills/tools/git.svg" alt="">
+                            </li>
+                            <div class="skill__name">
+                                <p class="title">Git</p>
+                                <p class="subTitle">Intermediate</p>
+                            </div>
+                        </div>
+                        <div class="skill__box">
+                            <li>
+                                <img src="images/skills/tools/netlify.svg" alt="">
+                            </li>
+                            <div class="skill__name">
+                                <p class="title">Netlify</p>
+                                <p class="subTitle">Advanced</p>
+                            </div>
+                        </div>
+                        <div class="skill__box">
+                            <li>
+                                <img src="images/skills/tools/visual-studio.svg" alt="">
+                            </li>
+                            <div class="skill__name">
+                                <p class="title">VS Code</p>
+                                <p class="subTitle">Advanced</p>
+                            </div>
+
+                        </div>
+                    </ul>
+                </div>
+            </div>
+
         </div>
     </section>
 </body>
