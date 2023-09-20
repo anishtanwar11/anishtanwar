@@ -746,7 +746,7 @@ a {
 
 }
 
-@media screen and (max-width: 386px) {
+@media screen and (max-width: 420px) {
     .skill__right-box li {
         width: 70px;
         height: 100px;
