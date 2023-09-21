@@ -624,8 +624,7 @@ a {
     }
 
     .skills__container {
-        flex-flow: column-reverse;
-        gap: 4rem;
+        gap: 2rem;
     }
 
 }
@@ -776,6 +775,23 @@ a {
     .Skills__container,
     .Project__container {
         padding-top: 4rem;
+    }
+
+    .skill__tab ul{
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .skill__tab ul li {
+        font-size: var(--smaller-font-size);
+    }
+    .skill__tab ul li{
+        display: grid;
+        place-items: center;
+    }
+    .skill__tab ul li span{
+        display: none;
     }
 
 }
