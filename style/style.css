@@ -752,6 +752,8 @@ a {
 
 }
 
+
+
 @media screen and (max-width: 420px) {
     .skill__right-box li {
         width: 70px;
@@ -781,10 +783,10 @@ a {
         align-items: center;
         justify-content: center;
         gap: 1.5rem;
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
     }
     .skill__tab ul li {
-        font-size: var(--smaller-font-size);
+        font-size: var(--small-font-size);
     }
     .skill__tab ul li{
         display: grid;
