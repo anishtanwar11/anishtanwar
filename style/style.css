@@ -159,6 +159,8 @@ a {
 .Skills__container,
 .Project__container {
     padding-top: 6rem;
+    padding-bottom: 6rem;
+    border: 1px solid black;
 }
 
 .about__right-box h1 span,
@@ -759,7 +761,7 @@ a {
 
 @media screen and (max-width: 420px) {
     .skill__right-box li {
-        width: 70px;
+        width: 80px;
         height: 100px;
         border-radius: 40px;
     }
@@ -779,7 +781,8 @@ a {
     .About__container,
     .Skills__container,
     .Project__container {
-        padding-top: 4rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
     }
 
     .skill__tab ul{
@@ -805,7 +808,6 @@ a {
 .Project__container{
     background-color: #FF3131;
     width: 100%;
-    margin-top: 4rem;
 }
 .project__container{
     width: 95%;
