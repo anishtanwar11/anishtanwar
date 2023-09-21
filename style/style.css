@@ -55,25 +55,10 @@
     --resume-container-color: #FAFAFA;
     --resume-container-color-alt: #F0EFEF;
 
-    /* ============== Font and typography ============*/
-    /* .5rem = 8px | 1rem = 16px .....*/
-    --resume-body-font: 'Roboto', sans-serif;
-    --resume-biggest-font-size: ;
-    --resume-h1-font-size: 1.5rem;
-    --resume-h2-font-size: 1.25rem;
-    --resume-h3-font-size: 1rem;
-    --resume-normal-font-size: .938rem;
-    --resume-small-font-size: .875rem;
-    --resume-smaller-font-size: .813rem;
-
     /*=============== MARGENES ============*/
     --mb-1: .5rem;
     --mb-2: 1rem;
     --mb-3: 1.5rem;
-
-    /*=============== z-index ============*/
-    --resume-z-tooltip: 10;
-    --resume-z-fixed: 100;
 }
 
 /* Responsive typography */
@@ -157,7 +142,9 @@ a {
 
 .About__container,
 .Skills__container,
-.Project__container {
+.Project__container,
+.Services__container,
+.Qualification__container{
     padding-top: 6rem;
     padding-bottom: 6rem;
 
@@ -165,7 +152,9 @@ a {
 
 .about__right-box h1 span,
 .skill__left-box h1 span,
-.project__container h1 span{
+.project__container h1 span,
+.services__container h1 span,
+.Qualification__container h1 span{
     color: #000;
 }
 .section__title,
@@ -266,8 +255,6 @@ a {
         transition: bottom .3s;
         bottom: -60%;
     }
-
-
 }
 
 .nav__list {
@@ -304,7 +291,7 @@ a {
 
 /* Show menu */
 .show-menu {
-    bottom: 2rem;
+    bottom: 1rem;
 }
 
 .nav__button {
@@ -719,7 +706,7 @@ a {
 }
 
 .skill__right-box li {
-    background: #fee2e2;
+    background: var(--container-color);
     display: grid;
     place-items: center;
     width: 85px;
@@ -779,7 +766,9 @@ a {
     }
 
    
-    .About__container{
+    .About__container,
+    .Services__container,
+    .Qualification__container{
         padding-top: 3rem;
         padding-bottom: 3rem;
     }
@@ -914,8 +903,127 @@ a {
         gap: .8rem;
         margin-top: 1rem;
     }
+
     
 }
+
+
+
+/*====================== SERVICES ======================*/
+
+
+.services__container h1{
+    font-size: var(--h1-font-size);
+    color: var(--active-color);
+    font-weight: var(--font-semi-bold);
+    text-align: center;
+    font-family: var(--title-font);
+}
+
+.services_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+.services_box .services_card{
+    max-width: 300px;
+    height: 270px;
+    padding: 20px;
+    background: var(--container-color);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    row-gap: 1rem;
+    flex-direction: column;
+    /* box-shadow: 8px 8px 20px #ffb6b6; */
+}
+.services_card img{
+    width: 50px;
+}
+.services_card h2{
+    font-family: var(--title-font);
+    color: var(--title-color);
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+}
+.services_card p{
+    color: var(--text-color);
+    font-size: var(--normal-font-size);
+    font-family: var(--body-font);
+    font-weight: 400;
+}
+
+
+
+/*====================== QUALIFICATION ======================*/
+.Qualification__container h1{
+    text-align: center;
+    color: var(--active-color);
+    font-size: var(--h1-font-size);
+    font-family: var(--title-font);
+    font-weight: var(--font-semi-bold);
+}
+.qualification__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.qualification__content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+}
+@media screen and (max-width:680px) {
+    .qualification__container{
+        flex-direction: column;
+    }
+    .qualification__content{
+        width: 100%;
+    }
+}
+.qualification__info{
+    display: grid;
+    row-gap: 2rem;
+}
+.qualification__container{
+    row-gap: 3.5rem;
+}
+
+.qualification__title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: .5rem;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    margin-bottom: 2rem;
+}
+
+.qualification__title i{
+    font-size: 1rem;
+    font-weight: initial;
+}
+
+.qualification__country,
+.qualification__year{
+    display: block;
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
+.qualification__country{
+    margin-bottom: .75rem;
+}
+.qualification__name{
+    margin-bottom: 1rem;
+}
+
+
 /* ==================================================================
 ==================================================================
 ==================================================================
