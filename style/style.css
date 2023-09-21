@@ -160,6 +160,7 @@ a {
 .Project__container {
     padding-top: 6rem;
     padding-bottom: 6rem;
+
 }
 
 .about__right-box h1 span,
@@ -777,10 +778,16 @@ a {
         gap:8px;
     }
 
-    .About__container,
-    .Skills__container,
+   
+    .About__container{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    .Skills__container{
+        padding-top: 3rem;
+
+    }
     .Project__container {
-        padding-top: 2rem;
         padding-bottom: 2rem;
     }
 
