@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="style/style.css">
     <!-- ================= REMIX ICON =============== -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- ================= AOS SCROLL REVEL ANIMATION =============== -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -94,25 +96,26 @@
     <main class="main " id="#">
         <div class="home___container container grid">
             <div class="home__left-box">
-                <div class="home__line"></div>
-                <h2 class="founder_name">
+                <div class="home__line" data-aos="fade-up"  data-aos-duration="3000" data-aos-offset="100" data-aos-easing="ease-in-sine"></div>
+                <h2 class="founder_name" data-aos="fade-up"  data-aos-duration="2900" data-aos-offset="100" data-aos-easing="ease-in-sine">
                     Anish Tanwar
                 </h2>
-                <h1 class="home__title">
+                <h1 class="home__title" data-aos="fade-up"  data-aos-duration="2500" data-aos-offset="100"
+                data-aos-easing="ease-in-sine">
                     Turning Idea's into Pixels <br>
                 </h1>
-                <h3 class="home__info-title">
+                <h3 class="home__info-title" data-aos="fade-up"  data-aos-duration="2000" data-aos-offset="100" data-aos-easing="ease-in-sine">
                     I have a strong interest in creating web applications, websites, and implementing responsive web
                     design.
                 </h3>
-                <div class="home__buttons">
+                <div class="home__buttons" data-aos="fade-up"  data-aos-duration="1500" data-aos-offset="100" data-aos-easing="ease-in-sine">
                     <button>Get a Proposal</button>
                     <button>Portfolio</button>
                 </div>
             </div>
 
             <div class="home__right-box">
-                <img src="images/home-photo.png" alt="">
+                <img src="images/home-photo.png" alt="" data-aos="fade-down"  data-aos-duration="3000" >
             </div>
         </div>
     </main>
@@ -120,13 +123,16 @@
     <!--================== ABOUT ==================-->
     <section class="About__container section" id="about">
         <div class="about__container container grid">
-            <div class="about__left-box">
-                <img src="images/about-founder-image.png" alt="">
+            <div class="about__left-box" data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="1000">
+                <img src="images/about-founder-image.png" alt="" >
             </div>
 
             <div class="about__right-box">
-                <h1>About Me<span>.</span></h1>
-                <h3>
+                <h1 data-aos="fade-up"  data-aos-duration="3000">About Me<span>.</span></h1 >
+                <h3 data-aos="fade-up"  data-aos-duration="2500">
                     I'm Anish Tanwar, an enthusiastic web developer driven by the incredible potential of web
                     development to foster connections and drive innovation. As a newcomer in this dynamic field, my
                     unwavering commitment lies in creating user-friendly websites and continuously evolving my skills.
@@ -134,13 +140,25 @@
                 </h3>
 
                 <ul class="social__icons">
-                    <li><i class="ri-github-fill"></i></li>
-                    <li><i class="ri-linkedin-box-fill"></i></li>
-                    <li><i class="ri-instagram-fill"></i></li>
-                    <li><i class="ri-youtube-fill"></i></li>
+                    <li data-aos="fade-right"
+                    data-aos-offset="100"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="1500"><i class="ri-github-fill"></i></li>
+                    <li data-aos="fade-right"
+                    data-aos-offset="100"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="2000"><i class="ri-linkedin-box-fill"></i></li>
+                    <li data-aos="fade-right"
+                    data-aos-offset="100"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="2500"><i class="ri-instagram-fill"></i></li>
+                    <li data-aos="fade-right"
+                    data-aos-offset="100"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="3000"><i class="ri-youtube-fill"></i></li>
                 </ul>
 
-                <button class="hire__me">Hire me <span><i class="ri-arrow-right-line"></i></span></button>
+                <button class="hire__me" data-aos="fade-up" data-aos-offset="100"  data-aos-duration="2000">Hire me <span><i class="ri-arrow-right-line"></i></span></button>
             </div>
         </div>
     </section>
@@ -173,10 +191,10 @@
 
             <div class="skill__right-box">
                 <!-- FRONTEND SKILL -->
-                <div class="skills__name" data-item="frontend" data-default="true">
+                <div class="skills__name" data-item="frontend" data-default="true" data-aos="zoom-in-down" data-aos-duration="2500">
                     <ul>
                         <div class="skill__box">
-                            <li>
+                            <li class="glare">
                                 <img src="images/skills/frontend/angular.png" alt="">
                             </li>
                             <div class="skill__name">
@@ -186,7 +204,7 @@
                         </div>
 
                         <div class="skill__box">
-                            <li>
+                            <li class="glare">
                                 <img src="images/skills/frontend/html.svg" alt="">
                             </li>
                             <div class="skill__name">
@@ -196,7 +214,7 @@
                         </div>
 
                         <div class="skill__box">
-                            <li>
+                            <li class="glare">
                                 <img src="images/skills/frontend/css.svg" alt="">
                             </li>
                             <div class="skill__name">
@@ -206,7 +224,7 @@
                         </div>
 
                         <div class="skill__box">
-                            <li>
+                            <li class="glare">
                                 <img src="images/skills/frontend/javascript.svg" alt="">
                             </li>
                             <div class="skill__name">
@@ -217,7 +235,7 @@
                         </div>
 
                         <div class="skill__box">
-                            <li>
+                            <li class="glare">
                                 <img src="images/skills/frontend/typescript.svg" alt="">
                             </li>
                             <div class="skill__name">
@@ -228,7 +246,7 @@
                         </div>
 
                         <div class="skill__box">
-                            <li>
+                            <li class="glare">
                                 <img src="images/skills/frontend/bootstrap.svg" alt="">
                             </li>
                             <div class="skill__name">
@@ -240,11 +258,11 @@
                 </div>
 
                 <!-- BACKEND SKILL -->
-                <div class="skills__name" data-item="backend">
+                <div class="skills__name" data-item="backend" data-aos="zoom-in-down">
                     <ul>
 
                         <div class="skill__box">
-                            <li>
+                            <li class="glare">
                                 <img src="images/skills/backend/nodejs.svg" alt="">
                             </li>
                             <div class="skill__name">
@@ -255,7 +273,7 @@
                         </div>
 
                         <div class="skill__box">
-                            <li>
+                            <li class="glare">
                                 <img src="images/skills/backend/express.svg" alt="">
                             </li>
                             <div class="skill__name">
@@ -265,7 +283,7 @@
                         </div>
 
                         <div class="skill__box">
-                            <li>
+                            <li class="glare">
                                 <img src="images/skills/backend/mongo.svg" alt="">
                             </li>
                             <div class="skill__name">
@@ -280,7 +298,7 @@
                 <div class="skills__name" data-item="language">
                     <ul>
                         <div class="skill__box">
-                            <li>
+                            <li class="glare">
                                 <img src="images/skills/languages/c.svg" alt="">
                             </li>
                             <div class="skill__name">
@@ -290,7 +308,7 @@
                         </div>
 
                         <div class="skill__box">
-                            <li>
+                            <li class="glare">
                                 <img src="images/skills/languages/c++.svg" alt="">
                             </li>
                             <div class="skill__name">
@@ -306,7 +324,7 @@
                     <ul>
 
                         <div class="skill__box">
-                            <li>
+                            <li class="glare">
                                 <img src="images/skills/tools/github-icon-1.svg" alt="">
                             </li>
                             <div class="skill__name">
@@ -315,7 +333,7 @@
                             </div>
                         </div>
                         <div class="skill__box">
-                            <li>
+                            <li class="glare">
                                 <img src="images/skills/tools/git.svg" alt="">
                             </li>
                             <div class="skill__name">
@@ -324,7 +342,7 @@
                             </div>
                         </div>
                         <div class="skill__box">
-                            <li>
+                            <li class="glare">
                                 <img src="images/skills/tools/netlify.svg" alt="">
                             </li>
                             <div class="skill__name">
@@ -333,7 +351,7 @@
                             </div>
                         </div>
                         <div class="skill__box">
-                            <li>
+                            <li class="glare">
                                 <img src="images/skills/tools/visual-studio.svg" alt="">
                             </li>
                             <div class="skill__name">
@@ -456,27 +474,6 @@
                         <i class="ri-links-line"></i>
                     </div>
                 </div>
-
-                <div class="project__card">
-                    <img src="images/portfolio/webapp-3.png" alt="">
-                    <div class="cover_icon">
-                        <i class="ri-links-line"></i>
-                    </div>
-                </div>
-
-                <div class="project__card">
-                    <img src="images/portfolio/website-3.png" alt="">
-                    <div class="cover_icon">
-                        <i class="ri-links-line"></i>
-                    </div>
-                </div>
-
-                <div class="project__card">
-                    <img src="images/portfolio/nobisfashion.png" alt="">
-                    <div class="cover_icon">
-                        <i class="ri-links-line"></i>
-                    </div>
-                </div>
             </div>
 
             <!-- WEBSITE -->
@@ -515,27 +512,6 @@
                         <i class="ri-links-line"></i>
                     </div>
                 </div>
-
-                <div class="project__card">
-                    <img src="images/portfolio/webapp-3.png" alt="">
-                    <div class="cover_icon">
-                        <i class="ri-links-line"></i>
-                    </div>
-                </div>
-
-                <div class="project__card">
-                    <img src="images/portfolio/website-3.png" alt="">
-                    <div class="cover_icon">
-                        <i class="ri-links-line"></i>
-                    </div>
-                </div>
-
-                <div class="project__card">
-                    <img src="images/portfolio/nobisfashion.png" alt="">
-                    <div class="cover_icon">
-                        <i class="ri-links-line"></i>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -545,7 +521,10 @@
         <div class="services__container container grid">
             <h1>What I Do<span>.</span></h1>
             <div class="services_box">
-                <div class="services_card">
+                <div class="services_card" data-aos="fade-right"
+                data-aos-offset="100"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="1000">
                     <img src="images/services/pencil-square.svg">
                     <h2>Website Development</h2>
                     <p>Creating the coding that brings a website to life and helps it to perform as required by the
@@ -553,7 +532,10 @@
                         Designing not only the way a website looks but also how it operates for the end user.</p>
                 </div>
 
-                <div class="services_card">
+                <div class="services_card" data-aos="fade-right"
+                data-aos-offset="100"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="1500">
                     <img src="images/services/umbrella.svg">
                     <h2>
                         Responsive Design</h2>
@@ -562,7 +544,10 @@
                         the screen size and orientation of the device being used to view it.</p>
                 </div>
 
-                <div class="services_card">
+                <div class="services_card" data-aos="fade-right"
+                data-aos-offset="100"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="2000">
                     <img src="images/services/terminal.svg">
                     <h2>Web App Development</h2>
                     <p>Creating software applications that run on a mobile device, and a typical mobile application
@@ -709,12 +694,28 @@
     <a href="#" class="scrollup" id="scroll-up">
         <i class="ri-arrow-up-line"></i>
     </a>
+
+
 </body>
+<!-- ================= AOS SCROLL REVEL ANIMATION =============== -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 <!-- SCRIPT FILE -->
 <script src="script/script.js"></script>
+
+<!-- VANILA TITL JS -->
+
+<script type="text/javascript" src="script/vanila-titl.js"></script>
+
 <script>
-    
-
+    VanillaTilt.init(document.querySelectorAll(".glare"), {
+		max: 25,
+		speed: 400,
+        glare: true,
+        "max-glare":1,
+	});
 </script>
-
+</body>
 </html>

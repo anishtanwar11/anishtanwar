@@ -596,7 +596,7 @@ body.dark-theme{
 .about__right-box button {
     border: none;
     outline: none;
-    padding: 13px 23px;
+    padding: 13px 20px;
     font-size: var(--h3-font-size);
     font-family: var(--body-font);
     font-weight: var(--font-semi-bold);
@@ -609,8 +609,9 @@ body.dark-theme{
     align-items: center;
     justify-content: center;
     display: flex;
-    gap: .5rem;
+    gap: .1rem;
     box-shadow: var(--box-shadow);
+    position: relative;
 }
 
 .about__right-box button:active {
@@ -620,11 +621,13 @@ body.dark-theme{
 .about__right-box button span {
     display: grid;
     place-items: center;
+    z-index: -1;
 }
 
 .about__right-box button:hover span {
     transform: translateX(10px);
     transition: .3s ease;
+    z-index: 1;
 }
 
 @media screen and (max-width:480px) {
@@ -938,9 +941,9 @@ body.dark-theme{
     font-size: var(--h2-font-size);
     font-weight: var(--font-medium);
 }
-/* .project__card:hover .cover_icon{
+.project__card:hover .cover_icon{
     top: 0;
-} */
+}
 
 @media screen and (max-width:800px) {
     .project__main{
@@ -984,13 +987,18 @@ body.dark-theme{
     max-width: 300px;
     height: 270px;
     padding: 20px;
-    background: var(--container-color);
+    /* background: var(--container-color); */
+    background: rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255,255,255,0.1);
+    border-left: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px);
     border-radius: 10px;
     display: flex;
     justify-content: center;
     row-gap: 1rem;
     flex-direction: column;
-    /* box-shadow: 8px 8px 20px #ffb6b6; */
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    cursor: pointer;
 }
 .services_card img{
     width: 50px;
