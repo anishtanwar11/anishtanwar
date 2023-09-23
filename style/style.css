@@ -907,6 +907,9 @@ body.dark-theme{
     gap: 1rem;
     margin-top: 2rem;
 }
+.project__main.hide-project{
+    display: none;
+}
 .project__card{
     overflow: hidden;
     width: 100%;
@@ -1355,3 +1358,9 @@ body.dark-theme{
         display: none;
     }
 }
+
+
+/* ========================================================== */
+/* ===================== PORTFOLIO PAGE ===================== */
+/* ========================================================== */
+

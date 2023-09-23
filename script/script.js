@@ -119,3 +119,51 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
+
+
+
+// ====================================================
+
+
+// /*==================== PROJECT SECTION ====================*/
+let projectButton = document.querySelectorAll('.Pbutton');
+let projectItem = document.querySelectorAll('.project__main');
+
+// Function to show a specific data-item
+function ShowDataItem(DataFilter) {
+    // Hide all data-item elements
+    for (let k = 0; k < projectItem.length; k++) {
+        projectItem[k].classList.remove('active');
+        projectItem[k].classList.add('hide-project');
+    }
+
+    // Show the data-item that matches the data-filter
+    for (let k = 0; k < projectItem.length; k++) {
+        if (projectItem[k].getAttribute('data-item') == DataFilter) {
+            projectItem[k].classList.remove('hide-project');
+            projectItem[k].classList.add('active');
+            break;
+        }
+    }
+}
+
+// Add click event listeners to tabs
+for (let i = 0; i < projectButton.length; i++) {
+    projectButton[i].addEventListener('click', function () {
+        for (let j = 0; j < projectButton.length; j++) {
+            projectButton[j].classList.remove('active');
+        }
+        this.classList.add('active');
+        let DataFilter = this.getAttribute('data-filter');
+        ShowDataItem(DataFilter);
+    });
+}
+
+// Initialize by showing the default data-item
+for (let k = 0; k < projectItem.length; k++) {
+    if (projectItem[k].getAttribute('data-default') == 'true') {
+        ShowDataItem(projectItem[k].getAttribute('data-item'));
+        break;
+    }
+}
+
