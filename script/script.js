@@ -167,3 +167,12 @@ for (let k = 0; k < projectItem.length; k++) {
     }
 }
 
+
+
+// ========================= GSAP ANIMATION ==========================
+
+gsap.from('.founder_name', {duration:1, x:'-100%', ease:'power3',delay:1})
+gsap.from('.home__title', {duration:1, x:'-110%', ease:'power3', delay:2})
+gsap.from('.home__info-title', {duration:1, x:'-120%', ease:'power3', delay:3})
+gsap.from('.home__buttons', {duration:1, opacity:0, delay:4, ease:'slow'})
+

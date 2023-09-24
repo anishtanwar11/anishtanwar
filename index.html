@@ -12,6 +12,9 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <!-- ================= AOS SCROLL REVEL ANIMATION =============== -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- GSAP ANIMATION -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    
 </head>
 
 <body>
@@ -96,19 +99,18 @@
     <main class="main " id="#">
         <div class="home___container container grid">
             <div class="home__left-box">
-                <div class="home__line" data-aos="fade-up"  data-aos-duration="3000" data-aos-offset="100" data-aos-easing="ease-in-sine"></div>
-                <h2 class="founder_name" data-aos="fade-up"  data-aos-duration="2900" data-aos-offset="100" data-aos-easing="ease-in-sine">
+                <div class="home__line" ></div>
+                <h2 class="founder_name" >
                     Anish Tanwar
                 </h2>
-                <h1 class="home__title" data-aos="fade-up"  data-aos-duration="2500" data-aos-offset="100"
-                data-aos-easing="ease-in-sine">
+                <h1 class="home__title" >
                     Turning Idea's into Pixels <br>
                 </h1>
-                <h3 class="home__info-title" data-aos="fade-up"  data-aos-duration="2000" data-aos-offset="100" data-aos-easing="ease-in-sine">
+                <h3 class="home__info-title">
                     I have a strong interest in creating web applications, websites, and implementing responsive web
                     design.
                 </h3>
-                <div class="home__buttons" data-aos="fade-up"  data-aos-duration="1500" data-aos-offset="100" data-aos-easing="ease-in-sine">
+                <div class="home__buttons" >
                     <button>Get a Proposal</button>
                     <button>Portfolio</button>
                 </div>
@@ -704,17 +706,9 @@
 <!-- SCRIPT FILE -->
 <script src="script/script.js"></script>
 
-<!-- VANILA TITL JS -->
 
-<script type="text/javascript" src="script/vanila-titl.js"></script>
 
-<script>
-    VanillaTilt.init(document.querySelectorAll(".glare"), {
-		max: 25,
-		speed: 400,
-        glare: true,
-        "max-glare":1,
-	});
-</script>
+
+
 </body>
 </html>
