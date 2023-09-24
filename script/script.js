@@ -169,8 +169,80 @@ for (let k = 0; k < projectItem.length; k++) {
 
 
 
-// ========================= GSAP ANIMATION ==========================
 
+// ========================== LIGHT BOX FOR PROJECT SECTION =======================
+const projectCard = document.querySelectorAll('.project__card')
+// Create a lightbox for each itemBox
+for (let i = 0; i < projectCard.length; i++) {
+    projectCard[i].addEventListener('click', function () {
+        // Create a new lightbox element
+        const lightBox = document.createElement('div');
+        lightBox.classList.add('lightBox');
+        // FOR VIDEO
+        const videoUrl = this.getAttribute('data-video');
+        // FOR PROJECT DESCRIPTION
+        const discription = this.getAttribute('data-discription');
+        // FOR PROJECT LINK
+        const viewWebsite = this.getAttribute('data-link');
+        // FOR PROJECT NAME
+        const imgName = this.getAttribute('data-name');
+        // const imageNameElement = document.getElementById('imageName');
+        // imageNameElement.textContent = imgName;
+
+        
+
+        lightBox.innerHTML = `
+            <div class="wrapper">
+                <header>
+                    <div class="logo-img">
+                        <img src="images/faveicon-anish.png" alt="logo-img"/>
+                    </div>
+                    <div class="buttons" id="closePreview">
+                       <i class="ri-close-line" ></i>
+                    </div>
+                </header>
+                <div class="preview-img">
+                    <div class="img">
+                        <img src="${this.querySelector('img').src}" alt="preview">
+                    </div>
+
+                    <div class="video-container">
+                        <div class="project">
+                            <span>${imgName}</span>
+                        </div>
+
+                        <div>
+                            <iframe width="560" height="315" src="${videoUrl}" frameborder="0" allowfullscreen></iframe>
+                        </div>
+
+                        <div class="discription">
+                            <p>${discription}</p>
+                        </div>
+
+                        <div class="view-project">
+                            <a href="${viewWebsite}">View Project</a>
+                        </div>
+                    </div>
+                </div>
+        `;
+
+        // Append the lightbox to the body
+        document.body.appendChild(lightBox);
+
+        // Add a click event listener to close the lightbox
+        const closeLightBox = lightBox.querySelector('#closePreview');
+        closeLightBox.addEventListener('click', function () {
+            document.body.removeChild(lightBox);
+        });
+
+        // Show the lightbox
+        lightBox.classList.add('show-lightBox');
+    });
+}
+
+
+
+// ========================= GSAP ANIMATION ==========================
 gsap.from('.founder_name', {duration:1, x:'-100%', ease:'power3',delay:1})
 gsap.from('.home__title', {duration:1, x:'-110%', ease:'power3', delay:2})
 gsap.from('.home__info-title', {duration:1, x:'-120%', ease:'power3', delay:3})
