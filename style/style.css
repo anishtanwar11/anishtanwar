@@ -1381,7 +1381,7 @@ body.dark-theme{
 
 
 #preloader{
-    background: #fff;
+    background: var(--body-color);
     height: 100vh;
     width: 100%;
     position: fixed;
