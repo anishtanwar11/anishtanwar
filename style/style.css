@@ -6,7 +6,7 @@
     --header-height: 3.5rem;
 
     /*============== colors ===================*/
-    /*= Color mode HSLhue, saturation, lightness */
+    /*= Color mode HSL(hue, saturation, lightness */
     --first-color: hsl(207, 65%, 65%);
     --title-color: hsl(207, 4%, 16%);
     --text-color: hsl(207, 4%, 28%);
@@ -88,6 +88,7 @@
     box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 ::-webkit-scrollbar{
     width: 15px;
     background: rgba(0,0,0,0.3);
@@ -97,6 +98,8 @@
     border-radius: 25px;
 }
 
+=======
+>>>>>>> parent of 9020464 (Add CSS on Scrollbar)
 html {
     scroll-behavior: smooth;
 }
@@ -1357,9 +1360,6 @@ body.dark-theme{
 
 }
 
-/* ============================================= */
-/* ================== SCROLL =================== */
-/* ============================================= */
 .scrollup{
     background: var(--scroll-up-background);
     position: fixed;
@@ -1391,9 +1391,7 @@ body.dark-theme{
     }
 }
 
-/* ============================================= */
-/* ================= PRELOADER ================= */
-/* ============================================= */
+
 #preloader{
     background: var(--body-color);
     height: 100vh;
@@ -1409,10 +1407,10 @@ body.dark-theme{
 #preloader img{
     width: 100px;
 }
-
 /* ========================================================== */
 /* ===================== PORTFOLIO PAGE ===================== */
 /* ========================================================== */
+
 .lightBox{
     position: fixed;
     top: 0;
