@@ -93,7 +93,7 @@
     background: rgba(0,0,0,0.3);
 }
 ::-webkit-scrollbar-thumb{
-    color: #FF3131;
+    background: #FF3131;
     border-radius: 25px;
 }
 
