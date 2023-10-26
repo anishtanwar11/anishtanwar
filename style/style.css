@@ -88,18 +88,15 @@
     box-sizing: border-box;
 }
 
-<<<<<<< HEAD
 ::-webkit-scrollbar{
-    width: 15px;
+    width: 5px;
     background: rgba(0,0,0,0.3);
 }
 ::-webkit-scrollbar-thumb{
-    background: #FF3131;
+    color: #FF3131;
     border-radius: 25px;
 }
 
-=======
->>>>>>> parent of 9020464 (Add CSS on Scrollbar)
 html {
     scroll-behavior: smooth;
 }
