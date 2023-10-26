@@ -89,7 +89,7 @@
 }
 
 ::-webkit-scrollbar{
-    width: 5px;
+    width: 10px;
     background: rgba(0,0,0,0.3);
 }
 ::-webkit-scrollbar-thumb{
