@@ -1250,7 +1250,7 @@ body.dark-theme{
         height: 85%;
         overflow: auto;
         display: grid;
-        padding: 350px 0 20px 0;
+        padding: 20px 0;
     }
 
 }
