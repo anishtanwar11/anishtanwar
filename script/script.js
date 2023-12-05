@@ -220,7 +220,7 @@ for (let i = 0; i < projectCard.length; i++) {
                         </div>
 
                         <div class="view-project">
-                            <a href="${viewWebsite}">View Project</a>
+                            <a href="${viewWebsite}" target="_blank">View Project</a>
                         </div>
                     </div>
                 </div>
@@ -239,6 +239,49 @@ for (let i = 0; i < projectCard.length; i++) {
         lightBox.classList.add('show-lightBox');
     });
 }
+
+
+/*===================== EMAIL JS ================ */
+const contactForm = document.getElementById('contact-form'),
+      contactName = document.getElementById('contact-name'),
+      contactEmail = document.getElementById('contact-email'),
+      contactProject = document.getElementById('contact-project'),
+      contactMessage = document.getElementById('contact-message')
+
+const sendEmail = (e) =>{
+    e.preventDefault()
+
+    // Check if the field has s value
+    if(contactName.value === '' || contactEmail.value === '' || contactProject.value === ''){
+        // Add and remove color
+        contactMessage.classList.remove('color-bule')
+        contactMessage.classList.add('color-red')
+
+        // show message
+        contactMessage.textContent = 'Write all the input field 📩'
+    }else{
+        // serviceID - templateID - #form - public
+        emailjs.sendForm('service_h7zmbow','template_7p0kkmh','#contact-form','6rQWxkbVldOSCzdgA')
+            .then(() =>{
+                // Show message and add color
+                contactMessage.classList.add('color-blue')
+                contactMessage.textContent = 'Message sent ✅'
+
+                // Remove message after five seconds
+                setTimeout(() =>{
+                    contactMessage.textContent = ''
+                }, 5000)
+            }, (error) =>{
+                alert('OOPS! SOMETHING HAS FAILED...', error)
+            })
+
+        // To clear the input field
+        contactName.value = ''
+        contactEmail.value = ''
+        contactProject.value = ''
+    }
+}
+contactForm.addEventListener('submit', sendEmail)
 
 
 

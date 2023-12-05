@@ -14,8 +14,9 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- ================= GSAP ANIMATION =================-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    
+
 </head>
+
 <body>
     <div id="preloader">
         <img src="images/faveicon-anish.png" alt="">
@@ -34,7 +35,6 @@
                         <a href="#" class="nav__link active-link">
                             <i class="ri-home-4-line"></i> Home
                         </a>
-
                     </li>
 
                     <li class="nav__item">
@@ -74,7 +74,7 @@
                     </li>
 
                     <li class="nav__item">
-                        <a href="#contact" class="nav__link">
+                        <a class="nav__link contact">
                             <i class="ri-chat-3-line"></i> Contact
                         </a>
                     </li>
@@ -98,29 +98,29 @@
         </nav>
     </header>
 
-    <!--================= MAIN ==================-->
+    <!--================= Home ==================-->
     <main class="main " id="#">
         <div class="home___container container grid">
             <div class="home__left-box">
-                <div class="home__line" ></div>
-                <h2 class="founder_name" >
+                <div class="home__line"></div>
+                <h2 class="founder_name">
                     Anish Tanwar
                 </h2>
-                <h1 class="home__title" >
+                <h1 class="home__title">
                     Turning Idea's into Pixels <br>
                 </h1>
                 <h3 class="home__info-title">
                     I have a strong interest in creating web applications, websites, and implementing responsive web
                     design.
                 </h3>
-                <div class="home__buttons" >
+                <div class="home__buttons">
                     <button>Get a Proposal</button>
-                    <button>Portfolio</button>
+                    <button><a href="#projects">Portfolio</a></button>
                 </div>
             </div>
 
             <div class="home__right-box">
-                <img src="images/home-photo.png" alt="" data-aos="fade-down"  data-aos-duration="3000" >
+                <img src="images/home-photo.png" alt="" data-aos="fade-down" data-aos-duration="3000">
             </div>
         </div>
     </main>
@@ -128,16 +128,14 @@
     <!--================= ABOUT ==================-->
     <section class="About__container section" id="about">
         <div class="about__container container grid">
-            <div class="about__left-box" data-aos="fade-right"
-            data-aos-offset="200"
-            data-aos-easing="ease-in-sine"
-            data-aos-duration="1000">
-                <img src="images/about-founder-image.png" alt="" >
+            <div class="about__left-box" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine"
+                data-aos-duration="1000">
+                <img src="images/about-founder-image.png" alt="">
             </div>
 
             <div class="about__right-box">
-                <h1 data-aos="fade-up"  data-aos-duration="3000">About Me<span>.</span></h1>
-                <h3 data-aos="fade-up"  data-aos-duration="2500">
+                <h1 data-aos="fade-up" data-aos-duration="3000">About Me<span>.</span></h1>
+                <h3 data-aos="fade-up" data-aos-duration="2500">
                     I'm Anish Tanwar, an enthusiastic web developer driven by the incredible potential of web
                     development to foster connections and drive innovation. As a newcomer in this dynamic field, my
                     unwavering commitment lies in creating user-friendly websites and continuously evolving my skills.
@@ -156,7 +154,7 @@
                         </a>
                     </li>
                     <li>
-                            <a href="https://www.instagram.com/thisisanishtanwar/">
+                        <a href="https://www.instagram.com/thisisanishtanwar/">
                             <i class="ri-instagram-fill"></i>
                         </a>
                     </li>
@@ -200,7 +198,8 @@
 
             <div class="skill__right-box">
                 <!-- FRONTEND SKILL -->
-                <div class="skills__name" data-item="frontend" data-default="true" data-aos="fade-up" data-aos-duration="2500">
+                <div class="skills__name" data-item="frontend" data-default="true" data-aos="fade-up"
+                    data-aos-duration="2500">
                     <ul>
                         <div class="skill__box">
                             <li>
@@ -389,11 +388,10 @@
 
             <!-- ALL -->
             <div class="project__main" Data-Item="all" Data-Default="true">
-                <div class="project__card"
-                     data-name="Shoping Web App" 
-                     data-discription="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio natus delectus maiores. Dolore, maiores. Aspernatur placeat similique corporis unde velit veritatis totam magnam neque provident!"
-                     data-link="https://nobis-store.netlify.app/" 
-                     data-video="https://www.youtube.com/embed/wCcnZ89ITiU?si=cZqZ_WXcYSQjtFBQ">
+                <div class="project__card" data-name="Shoping Web App"
+                    data-discription="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio natus delectus maiores. Dolore, maiores. Aspernatur placeat similique corporis unde velit veritatis totam magnam neque provident!"
+                    data-link="https://nobis-store.netlify.app/"
+                    data-video="https://www.youtube.com/embed/wCcnZ89ITiU?si=cZqZ_WXcYSQjtFBQ">
 
                     <img src="images/portfolio/all/webapp-1.png" alt="">
                     <div class="cover_icon">
@@ -401,22 +399,20 @@
                     </div>
                 </div>
 
-                <div class="project__card"
-                     data-name="Shoping Web App" 
-                     data-discription="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio natus delectus maiores. Dolore, maiores. Aspernatur placeat similique corporis unde velit veritatis totam magnam neque provident!"
-                     data-link="https://nobis-fashionhub.netlify.app/" 
-                     data-video="https://www.youtube.com/embed/wCcnZ89ITiU?si=cZqZ_WXcYSQjtFBQ">
+                <div class="project__card" data-name="Shoping Web App"
+                    data-discription="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio natus delectus maiores. Dolore, maiores. Aspernatur placeat similique corporis unde velit veritatis totam magnam neque provident!"
+                    data-link="https://nobis-fashionhub.netlify.app/"
+                    data-video="https://www.youtube.com/embed/wCcnZ89ITiU?si=cZqZ_WXcYSQjtFBQ">
                     <img src="images/portfolio/all/webapp-2.png" alt="">
                     <div class="cover_icon">
                         <i class="ri-links-line"></i>
                     </div>
                 </div>
 
-                <div class="project__card"
-                     data-name="Order Page Prototype" 
-                     data-discription="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio natus delectus maiores. Dolore, maiores. Aspernatur placeat similique corporis unde velit veritatis totam magnam neque provident!"
-                     data-link="https://tanwaranish.netlify.app/" 
-                     data-video="https://www.youtube.com/embed/wCcnZ89ITiU?si=cZqZ_WXcYSQjtFBQ">
+                <div class="project__card" data-name="Order Page Prototype"
+                    data-discription="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio natus delectus maiores. Dolore, maiores. Aspernatur placeat similique corporis unde velit veritatis totam magnam neque provident!"
+                    data-link="https://tanwaranish.netlify.app/"
+                    data-video="https://www.youtube.com/embed/wCcnZ89ITiU?si=cZqZ_WXcYSQjtFBQ">
 
                     <img src="images/portfolio/all/order-page.png" alt="">
                     <div class="cover_icon">
@@ -424,11 +420,10 @@
                     </div>
                 </div>
 
-                <div class="project__card"
-                data-name="Shoping Web App" 
-                data-discription="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio natus delectus maiores. Dolore, maiores. Aspernatur placeat similique corporis unde velit veritatis totam magnam neque provident!"
-                data-link="https://nobis24.netlify.app/" 
-                data-video="https://www.youtube.com/embed/wCcnZ89ITiU?si=cZqZ_WXcYSQjtFBQ">
+                <div class="project__card" data-name="Shoping Web App"
+                    data-discription="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio natus delectus maiores. Dolore, maiores. Aspernatur placeat similique corporis unde velit veritatis totam magnam neque provident!"
+                    data-link="https://nobis24.netlify.app/"
+                    data-video="https://www.youtube.com/embed/wCcnZ89ITiU?si=cZqZ_WXcYSQjtFBQ">
 
                     <img src="images/portfolio/all/website-1.png" alt="">
                     <div class="cover_icon">
@@ -436,44 +431,40 @@
                     </div>
                 </div>
 
-                <div class="project__card"
-                data-name="Shoping Web App" 
-                data-discription="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio natus delectus maiores. Dolore, maiores. Aspernatur placeat similique corporis unde velit veritatis totam magnam neque provident!"
-                data-link="https://nobisfashion.netlify.app/" 
-                data-video="https://www.youtube.com/embed/wCcnZ89ITiU?si=cZqZ_WXcYSQjtFBQ">
+                <div class="project__card" data-name="Shoping Web App"
+                    data-discription="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio natus delectus maiores. Dolore, maiores. Aspernatur placeat similique corporis unde velit veritatis totam magnam neque provident!"
+                    data-link="https://nobisfashion.netlify.app/"
+                    data-video="https://www.youtube.com/embed/wCcnZ89ITiU?si=cZqZ_WXcYSQjtFBQ">
                     <img src="images/portfolio/all/website-2.png" alt="">
                     <div class="cover_icon">
                         <i class="ri-links-line"></i>
                     </div>
                 </div>
 
-                <div class="project__card"
-                data-name="Shoping Web App" 
-                data-discription="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio natus delectus maiores. Dolore, maiores. Aspernatur placeat similique corporis unde velit veritatis totam magnam neque provident!"
-                data-link="https://netflixclone-pixinit.netlify.app/" 
-                data-video="https://www.youtube.com/embed/wCcnZ89ITiU?si=cZqZ_WXcYSQjtFBQ">
+                <div class="project__card" data-name="Shoping Web App"
+                    data-discription="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio natus delectus maiores. Dolore, maiores. Aspernatur placeat similique corporis unde velit veritatis totam magnam neque provident!"
+                    data-link="https://netflixclone-pixinit.netlify.app/"
+                    data-video="https://www.youtube.com/embed/wCcnZ89ITiU?si=cZqZ_WXcYSQjtFBQ">
                     <img src="images/portfolio/all/webapp-3.png" alt="">
                     <div class="cover_icon">
                         <i class="ri-links-line"></i>
                     </div>
                 </div>
 
-                <div class="project__card"
-                data-name="Shoping Web App" 
-                data-discription="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio natus delectus maiores. Dolore, maiores. Aspernatur placeat similique corporis unde velit veritatis totam magnam neque provident!"
-                data-link="https://anishtanwar11.github.io/HTML-Template1/" 
-                data-video="https://www.youtube.com/embed/wCcnZ89ITiU?si=cZqZ_WXcYSQjtFBQ">
+                <div class="project__card" data-name="Shoping Web App"
+                    data-discription="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio natus delectus maiores. Dolore, maiores. Aspernatur placeat similique corporis unde velit veritatis totam magnam neque provident!"
+                    data-link="https://anishtanwar11.github.io/HTML-Template1/"
+                    data-video="https://www.youtube.com/embed/wCcnZ89ITiU?si=cZqZ_WXcYSQjtFBQ">
                     <img src="images/portfolio/all/website-3.png" alt="">
                     <div class="cover_icon">
                         <i class="ri-links-line"></i>
                     </div>
                 </div>
 
-                <div class="project__card"
-                data-name="Shoping Web App" 
-                data-discription="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio natus delectus maiores. Dolore, maiores. Aspernatur placeat similique corporis unde velit veritatis totam magnam neque provident!"
-                data-link="https://nobis-24.netlify.app/" 
-                data-video="https://www.youtube.com/embed/fAFG87JH-Xg?si=yyBxedqAazkU8eMl">
+                <div class="project__card" data-name="Shoping Web App"
+                    data-discription="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio natus delectus maiores. Dolore, maiores. Aspernatur placeat similique corporis unde velit veritatis totam magnam neque provident!"
+                    data-link="https://nobis-24.netlify.app/"
+                    data-video="https://www.youtube.com/embed/fAFG87JH-Xg?si=yyBxedqAazkU8eMl">
                     <img src="images/portfolio/all/webapp-4.png" alt="">
                     <div class="cover_icon">
                         <i class="ri-links-line"></i>
@@ -483,22 +474,20 @@
 
             <!-- WEB APP -->
             <div class="project__main" Data-Item="web-app">
-                <div class="project__card"
-                data-name="Shoping Web App" 
-                data-discription="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio natus delectus maiores. Dolore, maiores. Aspernatur placeat similique corporis unde velit veritatis totam magnam neque provident!"
-                data-link="https://nobis-24.netlify.app/" 
-                data-video="https://www.youtube.com/embed/fAFG87JH-Xg?si=yyBxedqAazkU8eMl">
+                <div class="project__card" data-name="Shoping Web App"
+                    data-discription="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio natus delectus maiores. Dolore, maiores. Aspernatur placeat similique corporis unde velit veritatis totam magnam neque provident!"
+                    data-link="https://nobis-24.netlify.app/"
+                    data-video="https://www.youtube.com/embed/fAFG87JH-Xg?si=yyBxedqAazkU8eMl">
                     <img src="images/portfolio/web-app/webapp-1.png" alt="">
                     <div class="cover_icon">
                         <i class="ri-links-line"></i>
                     </div>
                 </div>
 
-                <div class="project__card"
-                data-name="Shoping Web App" 
-                data-discription="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio natus delectus maiores. Dolore, maiores. Aspernatur placeat similique corporis unde velit veritatis totam magnam neque provident!"
-                data-link="https://nobis-fashionhub.netlify.app/" 
-                data-video="https://www.youtube.com/embed/wCcnZ89ITiU?si=cZqZ_WXcYSQjtFBQ">
+                <div class="project__card" data-name="Shoping Web App"
+                    data-discription="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio natus delectus maiores. Dolore, maiores. Aspernatur placeat similique corporis unde velit veritatis totam magnam neque provident!"
+                    data-link="https://nobis-fashionhub.netlify.app/"
+                    data-video="https://www.youtube.com/embed/wCcnZ89ITiU?si=cZqZ_WXcYSQjtFBQ">
 
                     <img src="images/portfolio/web-app/webapp-2.png" alt="">
                     <div class="cover_icon">
@@ -506,33 +495,30 @@
                     </div>
                 </div>
 
-                <div class="project__card"
-                data-name="Shoping Web App" 
-                data-discription="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio natus delectus maiores. Dolore, maiores. Aspernatur placeat similique corporis unde velit veritatis totam magnam neque provident!"
-                data-link="https://tanwaranish.netlify.app/" 
-                data-video="https://www.youtube.com/embed/wCcnZ89ITiU?si=cZqZ_WXcYSQjtFBQ">
+                <div class="project__card" data-name="Shoping Web App"
+                    data-discription="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio natus delectus maiores. Dolore, maiores. Aspernatur placeat similique corporis unde velit veritatis totam magnam neque provident!"
+                    data-link="https://tanwaranish.netlify.app/"
+                    data-video="https://www.youtube.com/embed/wCcnZ89ITiU?si=cZqZ_WXcYSQjtFBQ">
                     <img src="images/portfolio/web-app/webapp-3.png" alt="">
                     <div class="cover_icon">
                         <i class="ri-links-line"></i>
                     </div>
                 </div>
 
-                <div class="project__card"
-                data-name="Shoping Web App" 
-                data-discription="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio natus delectus maiores. Dolore, maiores. Aspernatur placeat similique corporis unde velit veritatis totam magnam neque provident!"
-                data-link="https://netflixclone-pixinit.netlify.app/" 
-                data-video="https://www.youtube.com/embed/wCcnZ89ITiU?si=cZqZ_WXcYSQjtFBQ">
+                <div class="project__card" data-name="Shoping Web App"
+                    data-discription="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio natus delectus maiores. Dolore, maiores. Aspernatur placeat similique corporis unde velit veritatis totam magnam neque provident!"
+                    data-link="https://netflixclone-pixinit.netlify.app/"
+                    data-video="https://www.youtube.com/embed/wCcnZ89ITiU?si=cZqZ_WXcYSQjtFBQ">
                     <img src="images/portfolio/web-app/webapp-4.png" alt="">
                     <div class="cover_icon">
                         <i class="ri-links-line"></i>
                     </div>
                 </div>
 
-                <div class="project__card"
-                data-name="Shoping Web App" 
-                data-discription="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio natus delectus maiores. Dolore, maiores. Aspernatur placeat similique corporis unde velit veritatis totam magnam neque provident!"
-                data-link="https://nobis-store.netlify.app/" 
-                data-video="https://www.youtube.com/embed/wCcnZ89ITiU?si=cZqZ_WXcYSQjtFBQ">
+                <div class="project__card" data-name="Shoping Web App"
+                    data-discription="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio natus delectus maiores. Dolore, maiores. Aspernatur placeat similique corporis unde velit veritatis totam magnam neque provident!"
+                    data-link="https://nobis-store.netlify.app/"
+                    data-video="https://www.youtube.com/embed/wCcnZ89ITiU?si=cZqZ_WXcYSQjtFBQ">
                     <img src="images/portfolio/web-app/webapp-5.png" alt="">
                     <div class="cover_icon">
                         <i class="ri-links-line"></i>
@@ -542,55 +528,50 @@
 
             <!-- WEBSITE -->
             <div class="project__main" Data-Item="website">
-                <div class="project__card"
-                data-name="Shoping Web App" 
-                data-discription="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio natus delectus maiores. Dolore, maiores. Aspernatur placeat similique corporis unde velit veritatis totam magnam neque provident!"
-                data-link="https://nobisfashion.netlify.app/" 
-                data-video="https://www.youtube.com/embed/wCcnZ89ITiU?si=cZqZ_WXcYSQjtFBQ">
+                <div class="project__card" data-name="Shoping Web App"
+                    data-discription="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio natus delectus maiores. Dolore, maiores. Aspernatur placeat similique corporis unde velit veritatis totam magnam neque provident!"
+                    data-link="https://nobisfashion.netlify.app/"
+                    data-video="https://www.youtube.com/embed/wCcnZ89ITiU?si=cZqZ_WXcYSQjtFBQ">
                     <img src="images/portfolio/website/website-1.png" alt="">
                     <div class="cover_icon">
                         <i class="ri-links-line"></i>
                     </div>
                 </div>
 
-                <div class="project__card"
-                data-name="Shoping Web App" 
-                data-discription="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio natus delectus maiores. Dolore, maiores. Aspernatur placeat similique corporis unde velit veritatis totam magnam neque provident!"
-                data-link="https://anishtanwar.netlify.app/" 
-                data-video="https://www.youtube.com/embed/wCcnZ89ITiU?si=cZqZ_WXcYSQjtFBQ">
+                <div class="project__card" data-name="Shoping Web App"
+                    data-discription="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio natus delectus maiores. Dolore, maiores. Aspernatur placeat similique corporis unde velit veritatis totam magnam neque provident!"
+                    data-link="https://anishtanwar.netlify.app/"
+                    data-video="https://www.youtube.com/embed/wCcnZ89ITiU?si=cZqZ_WXcYSQjtFBQ">
                     <img src="images/portfolio/website/p-website-5.png" alt="">
                     <div class="cover_icon">
                         <i class="ri-links-line"></i>
                     </div>
                 </div>
 
-                <div class="project__card"
-                data-name="Shoping Web App" 
-                data-discription="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio natus delectus maiores. Dolore, maiores. Aspernatur placeat similique corporis unde velit veritatis totam magnam neque provident!"
-                data-link="https://nobis24.netlify.app/" 
-                data-video="https://www.youtube.com/embed/wCcnZ89ITiU?si=cZqZ_WXcYSQjtFBQ">
+                <div class="project__card" data-name="Shoping Web App"
+                    data-discription="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio natus delectus maiores. Dolore, maiores. Aspernatur placeat similique corporis unde velit veritatis totam magnam neque provident!"
+                    data-link="https://nobis24.netlify.app/"
+                    data-video="https://www.youtube.com/embed/wCcnZ89ITiU?si=cZqZ_WXcYSQjtFBQ">
                     <img src="images/portfolio/website/website-2.png" alt="">
                     <div class="cover_icon">
                         <i class="ri-links-line"></i>
                     </div>
                 </div>
 
-                <div class="project__card"
-                data-name="Shoping Web App" 
-                data-discription="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio natus delectus maiores. Dolore, maiores. Aspernatur placeat similique corporis unde velit veritatis totam magnam neque provident!"
-                data-link="https://anishtanwar11.github.io/HTML-Template1/" 
-                data-video="https://www.youtube.com/embed/wCcnZ89ITiU?si=cZqZ_WXcYSQjtFBQ">
+                <div class="project__card" data-name="Shoping Web App"
+                    data-discription="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio natus delectus maiores. Dolore, maiores. Aspernatur placeat similique corporis unde velit veritatis totam magnam neque provident!"
+                    data-link="https://anishtanwar11.github.io/HTML-Template1/"
+                    data-video="https://www.youtube.com/embed/wCcnZ89ITiU?si=cZqZ_WXcYSQjtFBQ">
                     <img src="images/portfolio/website/website-3.png" alt="">
                     <div class="cover_icon">
                         <i class="ri-links-line"></i>
                     </div>
                 </div>
 
-                <div class="project__card"
-                data-name="Shoping Web App" 
-                data-discription="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio natus delectus maiores. Dolore, maiores. Aspernatur placeat similique corporis unde velit veritatis totam magnam neque provident!"
-                data-link="https://tanwaranish.netlify.app/" 
-                data-video="https://www.youtube.com/embed/wCcnZ89ITiU?si=cZqZ_WXcYSQjtFBQ">
+                <div class="project__card" data-name="Shoping Web App"
+                    data-discription="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio natus delectus maiores. Dolore, maiores. Aspernatur placeat similique corporis unde velit veritatis totam magnam neque provident!"
+                    data-link="https://tanwaranish.netlify.app/"
+                    data-video="https://www.youtube.com/embed/wCcnZ89ITiU?si=cZqZ_WXcYSQjtFBQ">
                     <img src="images/portfolio/website/p-website-4.png" alt="">
                     <div class="cover_icon">
                         <i class="ri-links-line"></i>
@@ -605,10 +586,8 @@
         <div class="services__container container grid">
             <h1>What I Do<span>.</span></h1>
             <div class="services_box">
-                <div class="services_card" data-aos="fade-right"
-                data-aos-offset="100"
-                data-aos-easing="ease-in-sine"
-                data-aos-duration="1000">
+                <div class="services_card" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine"
+                    data-aos-duration="1000">
                     <img src="images/services/pencil-square.svg">
                     <h2>Website Development</h2>
                     <p>Creating the coding that brings a website to life and helps it to perform as required by the
@@ -616,10 +595,8 @@
                         Designing not only the way a website looks but also how it operates for the end user.</p>
                 </div>
 
-                <div class="services_card" data-aos="fade-right"
-                data-aos-offset="100"
-                data-aos-easing="ease-in-sine"
-                data-aos-duration="1500">
+                <div class="services_card" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine"
+                    data-aos-duration="1500">
                     <img src="images/services/umbrella.svg">
                     <h2>
                         Responsive Design</h2>
@@ -628,10 +605,8 @@
                         the screen size and orientation of the device being used to view it.</p>
                 </div>
 
-                <div class="services_card" data-aos="fade-right"
-                data-aos-offset="100"
-                data-aos-easing="ease-in-sine"
-                data-aos-duration="2000">
+                <div class="services_card" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine"
+                    data-aos-duration="2000">
                     <img src="images/services/terminal.svg">
                     <h2>Web App Development</h2>
                     <p>Creating software applications that run on a mobile device, and a typical mobile application
@@ -721,58 +696,58 @@
     <!--================= FOOTER ==================-->
     <section class="Footer__container section">
         <div class="footer__container container grid">
-        <div class="top__box">
-            <div class="top__left-box">
-                <h1>Anish Tanwar</h1>
-                <h3>Web Developer</h3>
-            </div>
+            <div class="top__box">
+                <div class="top__left-box">
+                    <h1>Anish Tanwar</h1>
+                    <h3>Web Developer</h3>
+                </div>
 
-            <div class="top__center-box">
-                <ul>
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#skills">Skils</a>
-                    </li>
-                    <li>
-                        <a href="#projects">Portfolio</a>
-                    </li>
-                </ul>
-            </div>
+                <div class="top__center-box">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#skills">Skils</a>
+                        </li>
+                        <li>
+                            <a href="#projects">Portfolio</a>
+                        </li>
+                    </ul>
+                </div>
 
-            <div class="top__right-box">
-                <ul>
-                    <li>
-                        <a href="https://github.com/anishtanwar11">
-                            <i class="ri-github-fill"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/thisisanishtanwar/">
-                            <i class="ri-linkedin-box-fill"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/thisisanishtanwar/">
-                            <i class="ri-instagram-fill"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com/@FrontendStudios-gy8iq">
-                            <i class="ri-youtube-fill"></i>
-                        </a>
-                    </li>
-                    
-                </ul>
+                <div class="top__right-box">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/anishtanwar11">
+                                <i class="ri-github-fill"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/thisisanishtanwar/">
+                                <i class="ri-linkedin-box-fill"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/thisisanishtanwar/">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/@FrontendStudios-gy8iq">
+                                <i class="ri-youtube-fill"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom__box">
+                <span class="copyright">
+                    &#169; Copyright Designed by anishtanwar. All rights reserved
+                </span>
             </div>
         </div>
-        <div class="bottom__box">
-            <span class="copyright">
-                &#169; Copyright Designed by anishtanwar. All rights reserved
-            </span>
-        </div>
-    </div>
     </section>
 
     <!--================= SCROOL UP ==================-->
@@ -780,10 +755,119 @@
         <i class="ri-arrow-up-line"></i>
     </a>
 
+    <!--================= CONTACT ==================-->
+    <section class="Contact__container section" id="contact">
+
+        <div class="contact__container container">
+            <header>
+                <div class="logo-img">
+                    <img src="images/faveicon-anish.png" alt="logo-img" />
+                </div>
+
+                <div class="header_title">
+                    <h2>Contact Me<span>.</span></h2>
+                    <p>Get in touch</p>
+                </div>
+
+                <div class="contactbuttons">
+                    <i class="ri-close-line"></i>
+                </div>
+            </header>
+
+            <div class="contact_info">
+
+                <div class="contact__content">
+                    <h3 class="contact__title">
+                        <i class="ri-chat-3-line"></i> Talk to me
+                    </h3>
+
+                    <div class="contact__info">
+                        <div class="contact__data">
+                            <span class="contact__data-title">Email</span>
+                            <span class="contact__data-info">tanwaranish333@gmail.com</span>
+
+                            <a href="mailto:tanwaranish333@gmail.com" class="contact__button">
+                                Write me <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__data">
+                            <span class="contact__data-title">Whatsapp</span>
+                            <span class="contact__data-info">+91 9306550020</span>
+
+                            <!-- Insert a real number plus contary code-->
+                            <a href="https://api.whatsapp.com/send?phone=919306550020&text=Hello,%20more%20information!"
+                                target="_blank" class="contact__button">
+                                Write me <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <ul class="social__icons">
+                        <h3>Follow Me</h3>
+                        <li>
+                            <a href="https://github.com/anishtanwar11">
+                                <i class="ri-github-fill"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/thisisanishtanwar/">
+                                <i class="ri-linkedin-box-fill"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/thisisanishtanwar/">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/@FrontendStudios-gy8iq">
+                                <i class="ri-youtube-fill"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="contact__content">
+                    <h3 class="contact__title">
+                        <i class="ri-send-plane-line"></i> Write me your project
+                    </h3>
+
+                    <form action="" class="contact__form" id="contact-form">
+
+                        <div class="contact__form-div">
+                            <label for="" class="contact__form-tag">Name</label>
+                            <input type="text" name="from_name" required placeholder="write your name"
+                                class="contact__form-input" id="contact-name">
+                        </div>
+
+                        <div class="contact__form-div">
+                            <label for="" class="contact__form-tag">Mail</label>
+                            <input type="email" name="user_email" required placeholder="write your email"
+                                class="contact__form-input" id="contact-email">
+                        </div>
+
+                        <div class="contact__form-div contact__form-area">
+                            <label for="contact-project" class="contact__form-tag">Project</label>
+                            <textarea name="message" placeholder="Write your project..." id="contact-project"
+                                class="contact__form-input"></textarea>
+                        </div>
+
+                        <p class="contact__message" id="contact-message"></p>
+
+                        <button type="submit" class="contact__button">
+                            Submit
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </body>
 <!-- ================= AOS SCROLL REVEL ANIMATION =============== -->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
 <script>
     AOS.init();
 </script>
@@ -794,9 +878,23 @@
 <script>
     var loader = document.getElementById("preloader");
 
-    window.addEventListener("load", function(){
+    window.addEventListener("load", function () {
         loader.style.display = "none";
     })
+
+</script>
+
+<!-- FOR CONTACT FORM -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<script>
+    /*---logi-sign-up-form----------*/
+    $(document).on('click', '.contact', function () {
+        $('.Contact__container').addClass('contact-active')
+    });
+    $(document).on('click', '.contactbuttons', function () {
+        $('.Contact__container').removeClass('contact-active')
+    });
 </script>
 
 </html>
