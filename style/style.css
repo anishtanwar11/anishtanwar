@@ -1225,6 +1225,7 @@ body.dark-theme{
     border-radius: 7px;
     padding: 20px;
     width: 70%;
+    height: 95%;
     justify-content: space-between;
     margin: 0 auto;
 }
@@ -1250,7 +1251,7 @@ body.dark-theme{
         height: 85%;
         overflow: auto;
         display: grid;
-        padding: 20px 0;
+        padding: 50px 0 20px 0;
     }
 
 }
