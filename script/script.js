@@ -242,46 +242,55 @@ for (let i = 0; i < projectCard.length; i++) {
 
 
 /*===================== EMAIL JS ================ */
-const contactForm = document.getElementById('contact-form'),
-      contactName = document.getElementById('contact-name'),
-      contactEmail = document.getElementById('contact-email'),
-      contactProject = document.getElementById('contact-project'),
-      contactMessage = document.getElementById('contact-message')
+const btn = document.getElementById('contact-button');
+function sendMail() {
+    (function () {
+        emailjs.init("g-KJQRLNcfxfV8syG");
+    })();
+    contactMessage = document.getElementById('contact-message')
+    
 
-const sendEmail = (e) =>{
-    e.preventDefault()
+    var params = {
+        user_name: document.querySelector("#user_name").value,
+        user_email: document.querySelector("#user_email").value,
+        user_project: document.querySelector("#user_project").value,
+    };
+    
+    var serviceID = "service_8umdftp";
+    var templateID = "template_6fsniup";
 
-    // Check if the field has s value
-    if(contactName.value === '' || contactEmail.value === '' || contactProject.value === ''){
+    if (params.user_name === '' || params.user_email === '' || params.user_project === '') {
+        console.log("Fill all feilds")
         // Add and remove color
         contactMessage.classList.remove('color-bule')
         contactMessage.classList.add('color-red')
-
         // show message
+
         contactMessage.textContent = 'Write all the input field 📩'
-    }else{
-        // serviceID - templateID - #form - public
-        emailjs.sendForm('service_h7zmbow','template_7p0kkmh','#contact-form','6rQWxkbVldOSCzdgA')
-            .then(() =>{
+
+    } else {
+        btn.value = 'Sending...';
+        emailjs.send(serviceID, templateID, params)
+            .then(res => {
                 // Show message and add color
-                contactMessage.classList.add('color-blue')
+                contactMessage.classList.remove('color-red')
+                contactMessage.classList.add('color-bule')
                 contactMessage.textContent = 'Message sent ✅'
 
+                // Clear form input fields
+                document.querySelector("#user_name").value = '';
+                document.querySelector("#user_email").value = '';
+                document.querySelector("#user_project").value = '';
+                btn.value = 'Send';
                 // Remove message after five seconds
-                setTimeout(() =>{
+                setTimeout(() => {
                     contactMessage.textContent = ''
-                }, 5000)
-            }, (error) =>{
-                alert('OOPS! SOMETHING HAS FAILED...', error)
+                }, 5000);
             })
-
-        // To clear the input field
-        contactName.value = ''
-        contactEmail.value = ''
-        contactProject.value = ''
+            .catch();
     }
 }
-contactForm.addEventListener('submit', sendEmail)
+
 
 
 

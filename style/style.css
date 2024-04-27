@@ -1291,6 +1291,7 @@ header .contactbuttons{
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    
 }
 header .contactbuttons i{
     color: #fff;
@@ -1430,9 +1431,11 @@ header .contactbuttons i{
     font-weight: var(--font-semi-bold);
     cursor: pointer;
     outline: none;
-    padding: 5px 15px;
+    padding: 10px 45px;
     border-radius: 7px;
     transition: .5s ease;
+    color: var(--body-color);
+    background-color: var(--title-color);
 }
 .contact__form .contact__button:hover{
     border-radius: 35px;
@@ -1476,15 +1479,29 @@ header .contactbuttons i{
     justify-content: center;
 }
 
+/* CSS FOR ERROR AND SUCCESS MESSAGE ON CONTACT PAGE */
+
 /* Status color */
 .color-red{
     color: hsl(4, 71%, 50%);
+    width: 100%;
+    padding: 5px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    text-align: right;
 }
 
 .color-bule{
     color: hsl(207, 56%, 45%);
+    width: 100%;
+    padding: 5px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    text-align: right;
 }
-
+/*END*/
 
 /*cancle btn*/
 .contactbuttons{
