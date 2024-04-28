@@ -149,12 +149,6 @@ a {
     padding-bottom: 3.5rem;
 }
 
-/* .about__container,
-.skills__container{
-    border: 1px solid red;
-}
-*/
-
 .About__container,
 .Skills__container,
 .Project__container,
@@ -162,7 +156,6 @@ a {
 .Qualification__container{
     padding-top: 6rem;
     padding-bottom: 6rem;
-
 }
 
 .About__container,
@@ -257,7 +250,7 @@ body.dark-theme{
 .header {
     width: 100%;
     position: fixed;
-    bottom: .1rem;
+    bottom: 0;
     left: 0;
     z-index: var(--z-fixed);
     padding: 0 15px;
@@ -1259,7 +1252,7 @@ body.dark-theme{
         height: 86%;
         overflow: auto;
         display: grid;
-        padding: 190px 0 20px 0;
+        padding: 20px 0 20px 0;
     }
 
 }
